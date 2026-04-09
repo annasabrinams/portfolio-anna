@@ -1,12 +1,17 @@
 const projetos = [
   {
-    nome: "Projeto 1",
-    descricao: "Meu primeiro projeto",
+    nome: "Portfólio Pessoal",
+    descricao: "Site desenvolvido com HTML, CSS e JavaScript para apresentar meus projetos.",
+    link: "https://annasabrinams.github.io/portfolio-anna"
+  },
+  {
+    nome: "Página de Login",
+    descricao: "Interface de login simples com validação básica.",
     link: "#"
   },
   {
-    nome: "Projeto 2",
-    descricao: "Outro projeto",
+    nome: "Lista de Tarefas",
+    descricao: "Aplicação simples para organizar tarefas do dia a dia.",
     link: "#"
   }
 ];
@@ -20,7 +25,7 @@ projetos.forEach(function(projeto) {
   div.innerHTML = `
     <h3>${projeto.nome}</h3>
     <p>${projeto.descricao}</p>
-    <a href="${projeto.link}">Ver projeto</a>
+    <a href="${projeto.link}" target="_blank">Ver projeto</a>
   `;
 
   container.appendChild(div);

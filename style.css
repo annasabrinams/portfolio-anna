@@ -1,40 +1,63 @@
 body {
   font-family: Arial;
   margin: 0;
+  background: #f4f4f4;
 }
 
 header {
-  background: #333;
+  background: #2c3e50;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 20px;
 }
 
 nav a {
   color: white;
-  margin-left: 10px;
+  margin-left: 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 section {
-  padding: 20px;
+  padding: 30px;
+}
+
+h2 {
+  color: #2c3e50;
 }
 
 #lista-projetos {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2980b9;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsivo */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
+    text-align: center;
   }
 }
